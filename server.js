@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var mongodb = require("mongodb");
+var path = require('path');
 var ObjectID = mongodb.ObjectID;
 
 var CONTACTS_COLLECTION = "contacts";
@@ -19,6 +20,10 @@ var db;
     var port = server.address().port;
     console.log("App now running on port", port);
   });
+
+  app.get('*',function(req,res){
+    res.sendFile(path.join(__dirname+'/dist/index.html'))
+  })
 
 // Connect to the database before starting the application server.
 // mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/test", function (err, client) {

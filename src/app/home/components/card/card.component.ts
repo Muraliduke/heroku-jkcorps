@@ -36,7 +36,7 @@ export class CardComponent implements OnInit {
     {
       id: 5,
       title: 'Dot Net',
-      img: 'assets/images/.net.png'
+      img: 'assets/images/dotnet.png'
     },
     {
       id: 6,
