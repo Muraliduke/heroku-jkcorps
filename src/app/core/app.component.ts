@@ -3,6 +3,10 @@ import {VERSION} from '@angular/material';
 import {NavItem} from './navigation/nav-model';
 import {NavService} from './navigation/nav-service';
 
+
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { DialogComponent } from './dialog/dialog.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -153,10 +157,24 @@ export class AppComponent implements AfterViewInit {
           }
   ];
 
-  constructor(private navService: NavService) {
+  constructor(private navService: NavService, public dialog: MatDialog) {
   }
 
   ngAfterViewInit() {
     this.navService.appDrawer = this.appDrawer;
   }
+
+  openDialog(): void {
+    let dialogRef = this.dialog.open(DialogComponent, {
+      
+      data: { name: '', mobile: '', degree: '', department: '', message: '' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+     
+    });
+  }
+
+
 }

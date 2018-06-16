@@ -1,0 +1,44 @@
+
+<div class='modal-form'>
+<h1 mat-dialog-title>Quick Enquiry</h1>
+<div mat-dialog-content>
+  <!-- <p>Your Name</p> -->
+  <form [formGroup]="myform">
+  <mat-form-field class="input-fields" >
+    <input matInput placeholder="Name" formControlName="name" required>
+    <mat-error *ngIf=""></mat-error>
+  </mat-form-field>
+  <mat-form-field class="input-fields" >
+    <input matInput placeholder="Mobile" formControlName="mobile" maxlength="10" required>
+    <mat-error >
+      <!-- <span *ngIf="myForm?.controls.mobile?.errors?.required">Required Field</span>
+      <span *ngIf="myForm?.controls.mobilet?.errors?.maxLength">Maximum Length is 10</span> -->
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="input-fields" >
+    <mat-select placeholder="Select" formControlName="degree" required>
+      <mat-option value="B.E">B.E/B.Tech</mat-option>
+      <mat-option value="Diploma">Diploma</mat-option>
+      <mat-option value="P.G">P.G</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="input-fields" >
+    <input matInput placeholder="Department" formControlName="department" required>
+  </mat-form-field>
+  <!-- <p>Kindly Mention Your Project Details</p> -->
+  <mat-form-field class="input-fields" >
+    <input matInput placeholder="message" formControlName="message" required>
+  </mat-form-field>
+
+</form>
+</div>
+
+
+<div mat-dialog-actions>
+  
+  <button mat-button color='warn' [mat-dialog-close]="true">Cancel</button>
+  <button mat-button color='primary' [disabled]='!myform.valid' (click)="onNoClick()">Save</button>
+
+</div>
+
+</div>
