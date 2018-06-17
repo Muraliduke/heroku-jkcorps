@@ -16,7 +16,7 @@ app.use(express.static(distDir));
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 var db;
  // Initialize the app.//comment this and comment below after mongodb is connected
-  var server = app.listen(process.env.PORT || 8080, function () {
+  var server = app.listen(process.env.PORT || 80, function () {
     var port = server.address().port;
     console.log("App now running on port", port);
   });
