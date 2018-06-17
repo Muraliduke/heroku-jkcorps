@@ -22,9 +22,17 @@
       <mat-option value="P.G">P.G</mat-option>
     </mat-select>
   </mat-form-field>
+
+  <mat-form-field class="input-fields" >
+    <input matInput placeholder="college" formControlName="college" required>
+  </mat-form-field>
+
+
   <mat-form-field class="input-fields" >
     <input matInput placeholder="Department" formControlName="department" required>
   </mat-form-field>
+
+ 
   <!-- <p>Kindly Mention Your Project Details</p> -->
   <mat-form-field class="input-fields" >
     <input matInput placeholder="message" formControlName="message" required>
@@ -37,7 +45,7 @@
 <div mat-dialog-actions>
   
   <button mat-button color='warn' [mat-dialog-close]="true">Cancel</button>
-  <button mat-button color='primary' [disabled]='!myform.valid' >Save</button>
+  <button mat-button color='primary' (click)='close()' [disabled]='!myform.valid' >Save</button>
 
 </div>
 

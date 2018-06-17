@@ -167,11 +167,11 @@ export class AppComponent implements AfterViewInit {
   openDialog(): void {
     let dialogRef = this.dialog.open(DialogComponent, {
       
-      data: { name: '', mobile: '', degree: '', department: '', message: '' }
+      //data: { name: '', mobile: '', degree: '', department: '', message: '' }
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+      console.log(result);
      
     });
   }

@@ -4,6 +4,11 @@ var mongodb = require("mongodb");
 var path = require('path');
 var ObjectID = mongodb.ObjectID;
 
+const fs = require('fs');
+
+
+let arrayOfObjects;
+
 var CONTACTS_COLLECTION = "contacts";
 
 var app = express();
@@ -16,14 +21,40 @@ app.use(express.static(distDir));
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 var db;
  // Initialize the app.//comment this and comment below after mongodb is connected
-  var server = app.listen(process.env.PORT || 80, function () {
+  var server = app.listen(process.env.PORT || 8080, function () {
     var port = server.address().port;
     console.log("App now running on port", port);
   });
 
+  app.get("/api/admin/students", function(req, res) {
+    res.sendFile( __dirname + "/data/studentsData.json" );
+});
+
+  app.post("/api/admin/students", function(req, res) {
+
+    let student = req.body;
+
+    fs.readFile(__dirname + "/data/studentsData.json", 'utf-8', function(err, data) {
+      if (err) throw err
+    
+       arrayOfObjects = JSON.parse(data);
+      arrayOfObjects.push(student);
+      fs.writeFileSync(__dirname + "/data/studentsData.json", JSON.stringify(arrayOfObjects, null, 2)); 
+     
+    })
+
+    res.send('new students details added successfully');
+  });
+
+// app.get('/api/test1', function(req, res) {
+//   res.sendFile( path.resolve('data/studentsData.json') );
+// });
+
+
   app.get('*',function(req,res){
     res.sendFile(path.join(__dirname+'/dist/index.html'))
   })
+
 
 // Connect to the database before starting the application server.
 // mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/test", function (err, client) {
