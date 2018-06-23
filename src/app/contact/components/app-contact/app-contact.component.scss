@@ -1,0 +1,31 @@
+$size : 32px;
+img{
+    width: 100%;
+}
+.banner{
+    position: relative;
+}
+
+h1{
+    /* font-size: -webkit-xxx-large; */
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+.parent{
+    margin: 20px 0px;
+}
+.contents {
+        padding: 20px;
+        font-size: 21px;
+        border-right: 1px solid #ccc;
+}
+
+a:hover{
+    text-decoration: none;
+}
+

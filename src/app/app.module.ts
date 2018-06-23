@@ -10,7 +10,8 @@ import { CoreModule } from './core/core.module';
 import { AppComponent } from './core/app.component';
 
 //modules here
-import {HomeModule} from './home/home.module'
+import {HomeModule} from './home/home.module';
+import {ContactModule} from './contact/contact.module'
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {HomeModule} from './home/home.module'
     BrowserAnimationsModule,
     NgbModule.forRoot(),
 
-    HomeModule
+    HomeModule,
+    ContactModule
  
   ],
   providers: [],
