@@ -11,12 +11,13 @@ import { AppComponent } from './core/app.component';
 
 //modules here
 import {HomeModule} from './home/home.module';
-import {ContactModule} from './contact/contact.module'
+import {ContactModule} from './contact/contact.module';
+import { NotfoundComponent } from './not-found/notfound.component'
 
 
 @NgModule({
   declarations: [
- ],
+ NotfoundComponent],
   imports: [
     BrowserModule,
     RouterModule,

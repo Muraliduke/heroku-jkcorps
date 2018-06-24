@@ -30,6 +30,12 @@ var db;
     res.sendFile( __dirname + "/data/studentsData.json" );
 });
 
+app.get('/robots.txt', function (req, res) {
+  console.log("robot is working");
+  res.type('text/plain');
+  res.send("User-agent: *\nDisallow: /");
+});
+
   app.post("/api/admin/students", function(req, res) {
 
     let student = req.body;
