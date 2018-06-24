@@ -18,7 +18,7 @@ import {CoreModule} from '../core/core.module';
     HomeRoutingModule,
     NgbModule.forRoot(),
     CarouselModule.forRoot(),
-    CoreModule
+    CoreModule 
   ],
   declarations: [
     
@@ -27,7 +27,7 @@ import {CoreModule} from '../core/core.module';
     TextEffectComponent,
     CarouselComponent,
     CardComponent
-  ],
+  ], 
   providers: [],
   exports: []
 })
