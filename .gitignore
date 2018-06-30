@@ -43,3 +43,4 @@ testem.log
 .DS_Store
 Thumbs.db
 Node JS/node_modules/*
+dist-server

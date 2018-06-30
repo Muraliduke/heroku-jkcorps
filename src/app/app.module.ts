@@ -19,7 +19,7 @@ import { NotfoundComponent } from './not-found/notfound.component'
   declarations: [
  NotfoundComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     RouterModule,
     HttpClientModule,
     CoreModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(meta: Meta, title: Title) {
+
+    title.setTitle('JK Electrocorps -Contact Us');
+
+    meta.addTags([
+      { name: 'author',   content: 'jkelectrocorps.com'},
+      { name: 'keywords', content: 'engineering projects,diploma projects,M.E projects'},
+      { name: 'description', content: 'JK Electrocorps -Best Project centre in chennai' }
+    ]);
+
+  }
 
   ngOnInit() {
   }
