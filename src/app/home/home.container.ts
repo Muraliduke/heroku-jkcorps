@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from "@angular/platform-browser";
 
+import { filter, map } from 'rxjs/operators';
+import { of } from 'rxjs';
+
 @Component({
   selector: 'app-home-container',
   template: `
@@ -11,16 +14,19 @@ import { Meta, Title } from "@angular/platform-browser";
 export class HomeContainer implements OnInit {
 
   constructor(meta: Meta, title: Title) {
-+
-    title.setTitle('JK Electrocorps -Best Final Year Projects in chennai');
+  
+  
+  
+  title.setTitle('Best Project center in chennai | Final year project center in chennai');
 
     meta.addTags([
-      { name: 'author',   content: 'jkelectrocorps.com'},
-      { name: 'keywords', content: 'engineering projects,diploma projects,M.E projects'},
-      { name: 'description', content: 'Best Project centre in chennai' }
+      { name: 'author',   content: 'jkelectrocorps.in'},
+      { name: 'keywords', content: 'JK electrocorps - Final Year project center in chennai, Best project center in chennai, Best IEEE project center in Chennai, Best Java,IOT,Embedded,Dot Net,Power electronics training and Project center in chennai.+ '},
+      { name: 'description', content: 'Having a hard time in doing final year projects?call-9551075056 we are the Best project center in chennai to take you ahead with free demo and training' }
     ]);
 
   }
+
 
   ngOnInit() {
   }
