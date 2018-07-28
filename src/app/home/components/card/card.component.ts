@@ -16,33 +16,33 @@ export class CardComponent implements OnInit {
     {
       id: 1,
       title: 'Embedded Systems',
-      img: 'assets/images/embedded.jpg'
+      img: 'http://res.cloudinary.com/dvotky5lf/image/upload/v1532790934/embedded_dag03n.jpg'
     },
     {
       id: 2,
       title: 'Power Electronics',
-      img: 'assets/images/powerelec.jpg'
+      img: 'http://res.cloudinary.com/dvotky5lf/image/upload/v1532789517/powerelec_nae2ry.jpg'
     },
     {
       id: 3,
       title: 'Mat Lab',
-      img: 'assets/images/matlab.jpg'
+      img: 'http://res.cloudinary.com/dvotky5lf/image/upload/v1532789520/matlab_dgxtvm.jpg'
     },
     {
       id: 4,
       title: ' Java',
-      img: 'assets/images/java.jpg'
+      img: 'http://res.cloudinary.com/dvotky5lf/image/upload/v1532790935/java_voebli.jpg'
     },
     {
       id: 5,
       title: 'Dot Net',
-      img: 'assets/images/dotnet.png'
+      img: 'http://res.cloudinary.com/dvotky5lf/image/upload/v1532790911/dotnet_kbpfiz.png'
     },
     {
       id: 6,
       title: 'IOT',
-      img: 'assets/images/iot.jpg'
+      img: 'http://res.cloudinary.com/dvotky5lf/image/upload/v1532790934/iot_suxuuj.jpg'
     },
-  ];
+  ]; 
 
 }

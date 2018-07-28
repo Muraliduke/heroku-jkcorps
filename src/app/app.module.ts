@@ -16,7 +16,7 @@ import { NotfoundComponent } from './not-found/notfound.component'
 
 
 @NgModule({
-  declarations: [
+  declarations: [  
  NotfoundComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
