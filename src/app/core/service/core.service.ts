@@ -17,7 +17,7 @@ export class CoreService {
   }
 
   addStudents(studentData) {
-    return this.http.post('/api/admin/students',studentData);
-}
+    return this.http.post('/api/admin/student',studentData);
+  }
 
 }
