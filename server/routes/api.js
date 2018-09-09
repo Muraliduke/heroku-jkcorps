@@ -1,4 +1,5 @@
 const express = require('express');
+var jsonFile = require("../../data/projectsList.json");
 
 const mongoose = require('mongoose');
 const router = express.Router();
@@ -6,7 +7,7 @@ const StudentsDetail = require('../models/students');
 const db= "mongodb://jkelectrocorps:admin123@ds155091.mlab.com:55091/userdetails";
 mongoose.Promise = global.Promise;
 
-mongoose.connect(db,function(err){
+mongoose.connect(db,{ useNewUrlParser: true },function(err){
   if(err){
     console.log("An err occured in db connection",err)
   }
@@ -23,6 +24,11 @@ router.get('/admin/students',function(req, res){
         }
     
     })
+})
+
+router.get('/admin/projects',function(req, res){
+    
+    res.json(jsonFile);
 })
 
 router.get('/admin/student/:id',function(req, res){

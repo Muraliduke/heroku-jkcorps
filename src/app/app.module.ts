@@ -12,8 +12,8 @@ import { AppComponent } from './core/app.component';
 //modules here
 import {HomeModule} from './home/home.module';
 import {ContactModule} from './contact/contact.module';
-import { NotfoundComponent } from './not-found/notfound.component'
-
+import { ProjectsModule } from './projects/projects.module';
+import { NotfoundComponent } from './not-found/notfound.component';
 
 @NgModule({
   declarations: [  
@@ -27,7 +27,8 @@ import { NotfoundComponent } from './not-found/notfound.component'
     NgbModule.forRoot(),
 
     HomeModule,
-    ContactModule
+    ContactModule,
+    ProjectsModule
  
   ],
   providers: [],

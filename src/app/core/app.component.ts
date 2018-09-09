@@ -30,42 +30,42 @@ export class AppComponent implements AfterViewInit {
         {
           displayName: 'Power Electronics Projects',
           iconName: 'settings_input_svideo',
-          route: ''
+          route: 'projects/power-electronics'
         },
         {
           displayName: 'Embedded System Projects',
           iconName: 'settings_input_antenna',
-          route: ''
+          route: 'projects/embedded'
         },
         {
           displayName: 'Matlab Projects',
           iconName: 'settings_applications',
-          route: ''
+          route: 'projects/matlab'
         },
         {
           displayName: 'IOT Projects',
           iconName: 'watch',
-          route: ''
+          route: 'projects/iot'
         },
         {
           displayName: 'Raspberry PI Projects',
           iconName: 'settings_input_composite',
-          route: ''
+          route: 'projects/raspberry-pi'
         },
         {
           displayName: 'Java Projects',
           iconName: 'important_devices',
-          route: ''
+          route: 'projects/java'
         },
         {
           displayName: '.NET Projects',
           iconName: 'developer_mode',
-          route: ''
+          route: 'projects/DotNet'
         },
         {
           displayName: 'Android Projects',
           iconName: 'android',
-          route: ''
+          route: 'projects/android'
         }
 
       ]
@@ -166,7 +166,6 @@ export class AppComponent implements AfterViewInit {
 
   openDialog(): void {
     let dialogRef = this.dialog.open(DialogComponent, {
-      
       //data: { name: '', mobile: '', degree: '', department: '', message: '' }
     });
 

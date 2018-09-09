@@ -27,6 +27,7 @@ import {
   // MatSliderModule,
   // MatSlideToggleModule,
   MatSnackBarModule,
+  MatTableModule,
  
   // MatTooltipModule,
 
@@ -85,6 +86,7 @@ const materialModules = [
   //  MatSlideToggleModule,
   //  MatSliderModule,
    MatSnackBarModule,
+   MatTableModule,
   //  MatTooltipModule,
   //  MatNativeDateModule,
    MatButtonModule,

@@ -18,6 +18,10 @@ export class CoreService {
 
   addStudents(studentData) {
     return this.http.post('/api/admin/student',studentData);
+  } 
+
+  getProjectData() {
+    return this.http.get('/api/admin/projects');
   }
 
 }

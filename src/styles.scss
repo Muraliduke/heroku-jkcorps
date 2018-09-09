@@ -13,12 +13,15 @@
 // Alternatively, you can import and @include the theme mixins for each component that you are using.
 @include angular-material-theme($app-theme);
 
+// html, body {
+//     font-family: 'Muli';
+// }
 body {
   margin: 0;
   height: 100vh;
   //font-family: Roboto, Arial, sans-serif;
-  font-family: "Comic Sans MS", cursive, sans-serif !important;
-  font-size: 16px;
+  font-family: 'Muli';
+  //font-size: 16px;
   color: #292a1d;
 }
 a {
