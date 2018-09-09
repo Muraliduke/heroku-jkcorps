@@ -14,7 +14,7 @@ export interface PeriodicElement {
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  private sub;
+   sub;
   constructor(private route: ActivatedRoute,private _Service: CoreService,) { }
   displayedColumns: string[] = ['title'];
   dataSource : PeriodicElement[];
