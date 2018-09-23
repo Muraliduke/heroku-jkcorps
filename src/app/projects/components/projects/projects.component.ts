@@ -22,22 +22,23 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
 
-    this._Service.getProjectData().subscribe(
-      data => {
-        this.projectsData = data;
-        
-      },
-      err => console.error(err),
-       () => console.log('done ')
-     );
+    
       
      this.route.params.subscribe(params => {
       this.sub = params['id'];
-      if(this.projectsData[this.sub] !== undefined){
-        this.dataSource = this.projectsData[this.sub];
-      }else{
-        this.dataSource = [];
-      }
+
+      this._Service.getProjectData().subscribe(
+        data => {
+          if(data[this.sub] !== undefined){
+            this.dataSource = data[this.sub];
+          }else{
+            this.dataSource = [];
+          }
+        },
+        err => console.error(err),
+         () => console.log('done ')
+       );
+      
       
    });
 
