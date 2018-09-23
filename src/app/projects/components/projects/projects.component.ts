@@ -18,23 +18,28 @@ export class ProjectsComponent implements OnInit {
   constructor(private route: ActivatedRoute,private _Service: CoreService,) { }
   displayedColumns: string[] = ['title'];
   dataSource : PeriodicElement[];
+  projectsData : any;
+
   ngOnInit() {
+
+    this._Service.getProjectData().subscribe(
+      data => {
+        this.projectsData = data;
+        
+      },
+      err => console.error(err),
+       () => console.log('done ')
+     );
+      
      this.route.params.subscribe(params => {
       this.sub = params['id'];
-   });
-
-   this._Service.getProjectData().subscribe(
-    data => {
-      if(data[this.sub] !== undefined){
-        this.dataSource = data[this.sub];
+      if(this.projectsData[this.sub] !== undefined){
+        this.dataSource = this.projectsData[this.sub];
       }else{
         this.dataSource = [];
-      } 
+      }
       
-    },
-    err => console.error(err),
-     () => console.log('done ')
-   );
+   });
 
   }
 
