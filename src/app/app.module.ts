@@ -1,3 +1,5 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
@@ -18,8 +20,10 @@ import { NotfoundComponent } from './not-found/notfound.component';
 @NgModule({
   declarations: [  
  NotfoundComponent],
-  imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
     RouterModule,
     HttpClientModule,
     CoreModule,
@@ -32,7 +36,6 @@ import { NotfoundComponent } from './not-found/notfound.component';
  
   ],
   providers: [],
-  bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }

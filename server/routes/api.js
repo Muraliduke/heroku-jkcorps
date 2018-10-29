@@ -2,6 +2,7 @@ const express = require('express');
 var jsonFile = require("../../data/projectsList.json");
 
 const mongoose = require('mongoose');
+//import mongoose from "mongoose/browser";
 const router = express.Router();
 const StudentsDetail = require('../models/students');
 const db= "mongodb://jkelectrocorps:admin123@ds155091.mlab.com:55091/userdetails";
