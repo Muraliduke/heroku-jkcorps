@@ -13,7 +13,7 @@ export class CoreService {
   constructor(private http:HttpClient) {}
  
   getStudents() {
-      return this.http.get('/api/admin/students');
+      return this.http.get('/api/admin/students'); 
   }
 
   addStudents(studentData) {

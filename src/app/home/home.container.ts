@@ -17,12 +17,12 @@ export class HomeContainer implements OnInit {
   
   
   
-  title.setTitle('Best Project center in chennai | Final year project center in chennai');
+  title.setTitle('IEEE project Center in Chennai | Best Project center in Chennai');
 
     meta.addTags([
       { name: 'author',   content: 'jkelectrocorps.in'},
-      { name: 'keywords', content: 'JK electrocorps - Final Year project center in chennai, Best project center in chennai, Best IEEE project center in Chennai, Best Java,IOT,Embedded,Dot Net,Power electronics training and Project center in chennai.+ '},
-      { name: 'description', content: 'Having a hard time in doing final year projects?call-9551075056 we are the Best project center in chennai to take you ahead with free demo and training' }
+      { name: 'keywords', content: 'Best IEEE project center in Chennai, Final Year project center in Chennai,Best Java,IOT,Embedded,Dot Net,Power electronics Project & Training center in Chennai '},
+      { name: 'description', content: 'Jk Electrocorps is one of the best IEEE project center in Chennai offers FREE TRAINING to students, to know more call 9551075056' }
     ]);
 
   }

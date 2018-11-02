@@ -4,7 +4,7 @@ import {HomeContainer} from './home.container';
 import { NotfoundComponent } from '../not-found/notfound.component'
 
 const routes: Routes=[
-    { path: 'home',  component: HomeContainer }
+    { path: 'final-year-project-center',  component: HomeContainer }
 
 ] 
 

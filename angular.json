@@ -54,18 +54,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "JK ELECTROCORPS:build"
+            "browserTarget": "JKELECTROCORPS:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "JK ELECTROCORPS:build:production"
+              "browserTarget": "JKELECTROCORPS:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "JK ELECTROCORPS:build"
+            "browserTarget": "JKELECTROCORPS:build"
           }
         },
         "test": {
@@ -112,7 +112,7 @@
         }
       }
     },
-    "JK ELECTROCORPS-e2e": {
+    "JKELECTROCORPS-e2e": {
       "root": "",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -121,7 +121,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "JK ELECTROCORPS:serve"
+            "devServerTarget": "JKELECTROCORPS:serve"
           }
         },
         "lint": {
@@ -138,7 +138,7 @@
       }
     }
   },
-  "defaultProject": "JK ELECTROCORPS",
+  "defaultProject": "JKELECTROCORPS",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

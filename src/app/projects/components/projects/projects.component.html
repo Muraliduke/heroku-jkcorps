@@ -1,5 +1,8 @@
  <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
+<h1 [hidden]="true">
+          {{headerValue}}
+        </h1>
 <h3>{{sub | uppercase}} TITLES</h3>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <!-- Symbol Column -->

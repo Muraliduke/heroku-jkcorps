@@ -2,19 +2,19 @@
  
   <div class='col-sm-12 col-md-4'>
       <ul>IEEE Project
-        <li *ngFor='let ieee of menus.navcontents[1].children'><a>{{ieee.displayName}}</a></li>
+        <li *ngFor='let ieee of menus.navcontents[1].children'><a [routerLink]="ieee.route">{{ieee.displayName}}</a></li>
       </ul>
   </div>
 
   <div class='col-sm-12 col-md-4'>
     <ul>Training
-      <li *ngFor='let ieee of menus.navcontents[2].children'><a>{{ieee.displayName}}</a></li>
+      <li *ngFor='let ieee of menus.navcontents[2].children' ><a [routerLink]="ieee.route">{{ieee.displayName}}</a></li>
     </ul>
   </div>
 
   <div class='col-sm-12 col-md-4'>
     <ul>Courses
-      <li *ngFor='let ieee of menus.navcontents[3].children'><a>{{ieee.displayName}}</a></li>
+      <li *ngFor='let ieee of menus.navcontents[3].children' ><a [routerLink]="ieee.route">{{ieee.displayName}}</a></li>
     </ul>
   </div>
 
@@ -24,6 +24,6 @@
 
 <div class='row'>
   <p class='col-sm-12'>
-    Copyright © 2018 by JK Electrocorps
+    Copyright © 2018 by JK Electrocorps Pvt Limited
   </p>
 </div>

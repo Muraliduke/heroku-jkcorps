@@ -18,42 +18,42 @@ export class nav{
                 {
                   displayName: 'Power Electronics Projects',
                   iconName: 'settings_input_svideo',
-                  route: 'projects/power-electronics'
+                  route: 'ieee/power-electronics-projects'
                 },
                 {
                   displayName: 'Embedded System Projects',
                   iconName: 'settings_input_antenna',
-                  route: 'projects/embedded'
+                  route: 'ieee/embedded-systems-projects'
                 },
                 {
                   displayName: 'Matlab Projects',
                   iconName: 'settings_applications',
-                  route: 'projects/matlab'
+                  route: 'ieee/matlab-projects'
                 },
                 {
                   displayName: 'IOT Projects',
                   iconName: 'watch',
-                  route: 'projects/iot'
+                  route: 'ieee/IOT-projects'
                 },
                 {
                   displayName: 'Raspberry PI Projects',
                   iconName: 'settings_input_composite',
-                  route: 'projects/raspberry-pi'
+                  route: 'ieee/raspberry-pi-projects'
                 },
                 {
                   displayName: 'Java Projects',
                   iconName: 'important_devices',
-                  route: 'projects/java'
+                  route: 'ieee/java-projects'
                 },
                 {
                   displayName: '.NET Projects',
                   iconName: 'developer_mode',
-                  route: 'projects/DotNet'
+                  route: 'ieee/dotnet-projects'
                 },
                 {
-                  displayName: 'Android Projects',
+                  displayName: 'VLSI Projects',
                   iconName: 'android',
-                  route: 'projects/and'
+                  route: 'ieee/vlsi-projects'
                 }
         
               ]

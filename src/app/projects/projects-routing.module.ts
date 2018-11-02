@@ -3,7 +3,7 @@ import { Routes,RouterModule } from '@angular/router';
 import {ProjectsContainer} from './projects.container';
 
 const routes: Routes=[
-    { path: 'projects/:id',  component: ProjectsContainer }
+    { path: 'ieee/:id',  component: ProjectsContainer }
 
 ] 
 
