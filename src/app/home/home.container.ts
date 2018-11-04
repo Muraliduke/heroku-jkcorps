@@ -22,7 +22,7 @@ export class HomeContainer implements OnInit {
     meta.addTags([
       { name: 'author',   content: 'jkelectrocorps.in'},
       { name: 'keywords', content: 'Best IEEE project center in Chennai, Final Year project center in Chennai,Best Java,IOT,Embedded,Dot Net,Power electronics Project & Training center in Chennai '},
-      { name: 'description', content: 'Jk Electrocorps is one of the best IEEE project center in Chennai offers FREE TRAINING to students, to know more call 9551075056' }
+      { name: 'description', content: 'We are the best IEEE project centers in Chennai which offers best IEEE projects FREE TRAINING to students, to know more call 7092639169' }
     ]);
 
   }

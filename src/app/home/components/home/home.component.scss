@@ -9,6 +9,30 @@ mat-card-content{
     box-shadow: 9px 6px 3px 2px #0b1650;
 }
 
+.img {
+    width: 100%;
+    margin-bottom: 18%;
+  }
+  .container {
+    min-height: 100%;
+    width: 100%;
+  }
+  .card-picture {
+    // width: 23%;
+    // margin-bottom: 2%;
+
+    float: left;
+    margin-bottom: 2%;
+    margin: 3%;
+  }
+  
+  .search-form {
+    width: 90%;
+  }
+  mat-card{
+    height: 312px
+  }
+
 // h1::before {
 //     content: '|';
 // }
@@ -18,4 +42,12 @@ mat-card-content{
 
 img{
     width: 100%;
+}
+.image-gallery{
+    a{
+        color: #333;
+    }
+    img{
+        cursor: pointer;
+    }
 }

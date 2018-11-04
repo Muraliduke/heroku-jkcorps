@@ -57,8 +57,6 @@ export class ProjectsComponent implements OnInit {
   dataSource: PeriodicElement[];
 
   ngOnInit() {
-    console.log(projectsValue);
-     
 
   }
 

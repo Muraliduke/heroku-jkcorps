@@ -5,7 +5,23 @@
 </h1>
 <img src='assets/images/BANNER.jpg' alt='jk-Electrocorps' />
 
-<app-card></app-card>
+<!-- <div fxLayout="row" class='row' fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <mat-card  class="card-picture col-sm-12 col-md-3" *ngFor="let picture of pictures">
+    <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+      <span fxFlex="80%">{{picture.title}}</span>
+    </mat-card-title>
+    <img mat-card-image [alt]='picture.title' [src]="picture.img">
+  </mat-card>
+</div> -->
+
+<div class='row'>
+  <div class='image-gallery col-sm-12 col-md-4' *ngFor="let picture of pictures">
+    <h2 ><a [routerLink]='picture.link'>{{picture.title}}</a></h2>
+    <img  [alt]='picture.title'  [routerLink]='picture.link' [src]="picture.img">
+  </div>
+</div>
+
+<div class='clearfix'></div>
 <div class='clearfix'></div>
 <div class="container-fluid" style="margin-top: 10px">
   <div class="jumbotron">

@@ -25,7 +25,7 @@ export class AppComponent implements AfterViewInit {
       },
       {
         displayName: 'About us',
-        iconName: 'home',
+        iconName: 'supervisor_account',
         route: 'Aboutus'
         
         
@@ -169,6 +169,7 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.navService.appDrawer = this.appDrawer;
+    console.log('here')
   }
 
   openDialog(): void {
@@ -182,5 +183,9 @@ export class AppComponent implements AfterViewInit {
     });
   }
 
+  onActivate(e, scrollContainer) {
+    scrollContainer.scrollTop = 0;
+    //window.scrollTo(0, 0)
+  }
 
 }

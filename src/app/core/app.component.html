@@ -27,7 +27,10 @@
         </span>
       </span>
     </mat-toolbar>
-  <router-outlet></router-outlet>
+    <div class='content' #scrollContainer>
+      <router-outlet (activate)="onActivate($event, scrollContainer)"></router-outlet>
+    </div> 
+  
   <div [hidden]='true'>
     <a href='https://www.facebook.com/JkIEEEProjects/'>Facebook</a>
     <a href='https://www.linkedin.com/company/jk-electrocorps/'>linkedin</a>

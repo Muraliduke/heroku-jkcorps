@@ -7,7 +7,6 @@ const routes: Routes=[
     {path: '' , redirectTo: '/final-year-project-center',pathMatch: 'full'},
     // {path: '404', component: NotfoundComponent},
     // {path: '**', redirectTo: '/404'}
-    
 ] 
 
 
